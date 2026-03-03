@@ -1,4 +1,4 @@
-# Web Application Penetration Testing - DEBI Final Project
+# Web Application Penetration Testing - DEPI Final Project
 
 ## Project Overview
 
