@@ -1,0 +1,5 @@
+Possible Vulnerabilities :
+
+- Cross-site scripting (XSS)
+- Cross-site request forgery (CSRF)
+- Clickjacking
