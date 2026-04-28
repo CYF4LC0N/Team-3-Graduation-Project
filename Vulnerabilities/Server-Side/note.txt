@@ -1,0 +1,11 @@
+Possible Vulnerabilities :
+
+- SQL Injection
+- File & Path Handling (Path Traversal , ..)
+- Redirect / Auth Logic
+- Broken Access Control
+- Server Processing Bugs ( SSTI , ..)
+- Server-Side Requests (SSRF , ..)
+- Data Exposure / Misconfig
+- Infrastructure / Dependencies
+- XML / Processing
