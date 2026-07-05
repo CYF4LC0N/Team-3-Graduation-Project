@@ -127,50 +127,50 @@ Analysis of application workflows to identify weaknesses arising from incorrect 
 
 2- Verify the Exposed Elasticsearch Service using Burp Suite Proxy
 
-![](images/Pasted image 20260702124355.png)
+![](images/Pasted%20image%2020260702124355.png)
 
 
 3- Enumerate Existing Indices
 
-![](images/Pasted image 20260702124542.png)
+![](images/Pasted%20image%2020260702124542.png)
 
 4- Read the documents of the 3 indices `admin_data , support_data , hr_data` 
 
-![](images/Pasted image 20260702130652.png)
+![](images/Pasted%20image%2020260702130652.png)
 
 
-![](images/Pasted image 20260702131142.png)
+![](images/Pasted%20image%2020260702131142.png)
 
 
-![](images/Pasted image 20260702131305.png)
+![](images/Pasted%20image%2020260702131305.png)
 
 
 5- Modify Existing Document
 
-![](images/Pasted image 20260702135732.png)
+![](images/Pasted%20image%2020260702135732.png)
 
 
 Dashboard Before
 
-![](images/Pasted image 20260702135617.png)
+![](images/Pasted%20image%2020260702135617.png)
 
 Dashboard After
 
-![](images/Pasted image 20260702135811.png)
+![](images/Pasted%20image%2020260702135811.png)
 
 ==But After a small period of time → the Re-Indexing happens and the original data appears again==
 
 6- Delete a Document
 
-![](images/Pasted image 20260702140541.png)
+![](images/Pasted%20image%2020260702140541.png)
 
 ==But After a small period of time → the Re-Indexing happens and the original data appears again==
 
 6- Add a new Document
 
-![](images/Pasted image 20260702140808.png)
+![](images/Pasted%20image%2020260702140808.png)
 
-![](images/Pasted image 20260702140831.png)
+![](images/Pasted%20image%2020260702140831.png)
 
 
 ----
@@ -191,7 +191,7 @@ Dashboard After
 ##### 1- Authenticate as a regular user and navigate to the dashboard page
 `http://localhost.com:8000/dashboard?db=hr`
 
-![](images/Pasted image 20260701121119.png)
+![](images/Pasted%20image%2020260701121119.png)
 
 
 ##### 2- Open Burp Suite and intercept the request
@@ -199,14 +199,14 @@ Dashboard After
 ##### 3- Observe that the dashboard retrieves its data from the following API endpoint.
 `/api/dashboard/data?db=hr`
 
-![](images/Pasted image 20260701121420.png)
+![](images/Pasted%20image%2020260701121420.png)
 
 
 ##### 4- Send the Request to the Repeater and modify the `db` parameter from `hr` to `admin` 
 
 Observe that the server returns sensitive administrative data without performing proper authorization checks.
 
-![](images/Pasted image 20260701121711.png)
+![](images/Pasted%20image%2020260701121711.png)
 
 #### 4.3
 
@@ -249,11 +249,11 @@ Observe that the server returns sensitive administrative data without performing
 
 **Screenshots — Proof of Concept**
 
-![](images/Pasted image 20260703111717.png)
+![](images/Pasted%20image%2020260703111717.png)
 
-![](images/Pasted image 20260703111724.png)
+![](images/Pasted%20image%2020260703111724.png)
 
-![](images/Pasted image 20260703111731.png)
+![](images/Pasted%20image%2020260703111731.png)
 
 #### 4.5
 
@@ -285,10 +285,10 @@ Observe that the server returns sensitive administrative data without performing
 
 **Screenshots — Proof of Concept**
 
-![](images/Pasted image 20260703112132.png)
+![](images/Pasted%20image%2020260703112132.png)
 
-![](images/Pasted image 20260703112136.png)
-![](images/Pasted image 20260703112141.png)
+![](images/Pasted%20image%2020260703112136.png)
+![](images/Pasted%20image%2020260703112141.png)
 
 
 ----
@@ -390,33 +390,33 @@ C:.
 
 0- 
 
-![](images/Pasted image 20260702231247.png)
+![](images/Pasted%20image%2020260702231247.png)
 
 1-
 
-![](images/Pasted image 20260702225758.png)
+![](images/Pasted%20image%2020260702225758.png)
 
 
-![](images/Pasted image 20260702225736.png)
+![](images/Pasted%20image%2020260702225736.png)
 
 
-![](images/Pasted image 20260702225844.png)
+![](images/Pasted%20image%2020260702225844.png)
 
 
-![](images/Pasted image 20260702225902.png)
+![](images/Pasted%20image%2020260702225902.png)
 
 2-
 
-![](images/Pasted image 20260702230339.png)
+![](images/Pasted%20image%2020260702230339.png)
 
 
-![](images/Pasted image 20260702230504.png)
+![](images/Pasted%20image%2020260702230504.png)
 
 
 
-![](images/Pasted image 20260702230607.png)
+![](images/Pasted%20image%2020260702230607.png)
 
-![](images/Pasted image 20260702230740.png)
+![](images/Pasted%20image%2020260702230740.png)
 
 #### 4.8
 
@@ -433,14 +433,14 @@ C:.
 
 1- 
 
-![](images/Pasted image 20260702222008.png)
+![](images/Pasted%20image%2020260702222008.png)
 
-![](images/Pasted image 20260702222029.png)
+![](images/Pasted%20image%2020260702222029.png)
 
-![](images/Pasted image 20260702222044.png)
+![](images/Pasted%20image%2020260702222044.png)
 
 
-![](images/Pasted image 20260702223502.png)
+![](images/Pasted%20image%2020260702223502.png)
 
 
 #### 4.9
@@ -459,63 +459,63 @@ C:.
 ##### First
 
 1- 
-![](images/Pasted image 20260702214600.png)
+![](images/Pasted%20image%2020260702214600.png)
 
 2-
 
-![](images/Pasted image 20260702214658.png)
+![](images/Pasted%20image%2020260702214658.png)
 
 3-
 
-![](images/Pasted image 20260702214822.png)
+![](images/Pasted%20image%2020260702214822.png)
 
 
-![](images/Pasted image 20260702214901.png)
+![](images/Pasted%20image%2020260702214901.png)
 
 4-
 
-![](images/Pasted image 20260702214957.png)
+![](images/Pasted%20image%2020260702214957.png)
 
 
-![](images/Pasted image 20260702215022.png)
+![](images/Pasted%20image%2020260702215022.png)
 
 5-
 
 
-![](images/Pasted image 20260702215126.png)
+![](images/Pasted%20image%2020260702215126.png)
 
-![](images/Pasted image 20260702215208.png)
+![](images/Pasted%20image%2020260702215208.png)
 
 
 
-![](images/Pasted image 20260702215259.png)
+![](images/Pasted%20image%2020260702215259.png)
 
 
 ##### Second
 
 1-
 
-![](images/Pasted image 20260702215622.png)
+![](images/Pasted%20image%2020260702215622.png)
 
 
-![](images/Pasted image 20260702215639.png)
+![](images/Pasted%20image%2020260702215639.png)
 
 
 2-
 
-![](images/Pasted image 20260702220533.png)
+![](images/Pasted%20image%2020260702220533.png)
 
-![](images/Pasted image 20260702220603.png)
+![](images/Pasted%20image%2020260702220603.png)
 
 3-
 
-![](images/Pasted image 20260702220645.png)
+![](images/Pasted%20image%2020260702220645.png)
 
-![](images/Pasted image 20260702220703.png)
+![](images/Pasted%20image%2020260702220703.png)
 
-![](images/Pasted image 20260702220826.png)
+![](images/Pasted%20image%2020260702220826.png)
 
-![](images/Pasted image 20260702220909.png)
+![](images/Pasted%20image%2020260702220909.png)
 
 #### 4.10
 
@@ -532,32 +532,32 @@ C:.
 
 1- Authenticate and navigate to the dashboard page `http://localhost:8000/dashboard?db=hr`
 
-![](images/Pasted image 20260703114109.png)
+![](images/Pasted%20image%2020260703114109.png)
 
 2- Open Burp Suite and browse to the crafted URL` http://localhost:8000/dashboard//google.com `— observe that Burp captures the request in the site map with status 302.
 
-![](images/Pasted image 20260703114124.png)
+![](images/Pasted%20image%2020260703114124.png)
 
 3- Inspect the raw HTTP request intercepted by Burp Suite.
 
-![](images/Pasted image 20260703114139.png)
+![](images/Pasted%20image%2020260703114139.png)
 
 
 4- Observe the HTTP response headers — the server returns HTTP/1.1 302 Found with Location: `https://google.com`, confirming the open redirect.
 
-![](images/Pasted image 20260703114158.png)
+![](images/Pasted%20image%2020260703114158.png)
 
 5- Inspect the response body — it contains a meta-refresh tag and an anchor element both pointing to `https://google.com,` providing an HTML fallback redirect mechanism
 
-![](images/Pasted image 20260703114222.png)
+![](images/Pasted%20image%2020260703114222.png)
 6- Allow the request to proceed — observe that the browser lands on` https://www.google.com`, confirming the victim has been redirected to an external domain without any warning.
 
-![](images/Pasted image 20260703114235.png)
+![](images/Pasted%20image%2020260703114235.png)
 
 
 ----
 
 
-![](images/Pasted image 20260703144453.png)
+![](images/Pasted%20image%2020260703144453.png)
 
 ----
