@@ -122,7 +122,7 @@ Analysis of application workflows to identify weaknesses arising from incorrect 
 
 1- Port Scanning using `nmap`
 
-![](images/Pasted image 20260702141623.png)
+![](images/Pasted%20image%2020260702141623.png)
 
 
 2- Verify the Exposed Elasticsearch Service using Burp Suite Proxy
